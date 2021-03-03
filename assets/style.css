@@ -55,7 +55,7 @@ h2 {
     cursor: not-allowed;
 }
 
-.choice-container {
+.choiceContainer {
     display:flex;
     margin-bottom: 5%;
     width: 100%;
@@ -65,17 +65,17 @@ h2 {
     min-width: 80%;
 }
 
-.choice-container:hover {
+.choiceContainer:hover {
     cursor: pointer;
     transform: scale(1.02);
     transition: transform 100ms;
 }
-.choice-prefix {
+.choiceLetter {
     padding: 2%;
     color: purple;
 }
 
-.choice-text {
+.choiceText {
     padding: 2%;
     width: 100%; 
 }
@@ -89,7 +89,27 @@ h2 {
 }
 
 /* Heads up display */
-#hud {
+#game-info {
     display: flex;
     justify-content: space-between;
+}
+
+.gameTitles {
+    text-align: center;
+    font-size: 25px;
+}
+
+.gameTitles {
+    text-align: center;
+}
+
+.high-score-box {
+    height: 80%;
+    width: 100%;
+    background: cornflowerblue;
+
+
+}
+#hide {
+    display: none;
 }
