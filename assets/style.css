@@ -1,115 +1,104 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0 auto;
-    background-color: aliceblue;
-    text-align: center;
-
+  margin: 0 auto;
+  background-color: aliceblue;
+  text-align: center;
 }
 
 h1 {
-    margin: 5%;
+  margin: 5%;
 }
 
 h2 {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .container {
-    background-color: bisque;
-    margin-left: 20%;
-    margin-top: 5%;
-    width: 60%;
-    height: 80%;
-    display: flex;
-    padding: 5%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
+  background-color: bisque;
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  padding: 5%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .btn {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5%;
-    margin-top: 10%;
-
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5%;
+  margin-top: 10%;
 }
 
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .btn[disabled]:hover {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .choiceContainer {
-    display:flex;
-    margin-bottom: 5%;
-    width: 100%;
-    border-radius: 5px;
-    background: rgb(245, 244, 244);
-    font-size: 20px;
-    min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(245, 244, 244);
+  font-size: 20px;
+  min-width: 80%;
 }
 
 .choiceContainer:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-    transition: transform 100ms;
-}
-.choiceLetter {
-    padding: 2%;
-    color: purple;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 100ms;
 }
 
-.choiceText {
-    padding: 2%;
-    width: 100%; 
+#choiceText {
+  padding: 2%;
+  width: 100%;
 }
 
 .correct {
-    background: rgb(211, 241, 166);
+  background: rgb(211, 241, 166);
 }
 
 .incorrect {
-    background: rgb(245, 121, 119);
+  background: rgb(245, 121, 119);
 }
 
 /* Heads up display */
 #game-info {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .gameTitles {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .gameTitles {
-    text-align: center;
+  text-align: center;
 }
 
 .high-score-box {
-    height: 80%;
-    width: 100%;
-    background: cornflowerblue;
-
-
-}
-#hide {
-    display: none;
+  height: 80%;
+  width: 100%;
+  background: cornflowerblue;
 }

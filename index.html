@@ -1,60 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="assets/style.css"/>
-</head>
-<body>
-   
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Code Quiz</h1>
-        <div id="game">
-            <div id="game-info">
-                <div class="game-info-item">
-                    <p class="gameTitles">
-                        Question
-                    </p>
-                </div>
-                <div class="game-info-item">
-                    <p class="gameTitles">
-                        Score
-                    </p>
-                    <h1 class="game-info-main-text" id="score">
-                        0
-                    </h1>
-                </div>
-            </div>
-            <div id="question"></div><h2>Whats the answer to this?</h2>
-            <div class="choiceContainer">
-                <p class="choiceLetter">A</p>
-                <p class="choiceText" data-number="1">Choice 1</p>
-            </div>
-            <div class="choiceContainer">
-                <p class="choiceLetter">B</p>
-                <p class="choiceText" data-number="2">Choice 2</p>
-            </div>
-            <div class="choiceContainer">
-                <p class="choiceLetter">C</p>
-                <p class="choiceText" data-number="3">Choice 3</p>
-            </div>
-            <div class="choiceContainer">
-                <p class="choiceLetter">D</p>
-                <p class="choiceText" data-number="4">Choice 4</p>
-            </div>
+      <h1>Code Quiz</h1>
+      <div id="gameStart">
+        <!-- Timer and Score Container -->
+        <div id="game-info">
+          <div class="game-info-item">
+            <p class="gameTitles">Timer</p>
+            <h1 class="game-info-main-text" id="timer">100</h1>
+          </div>
+          <div class="game-info-item">
+            <p class="gameTitles">Score</p>
+            <h1 class="game-info-main-text" id="score">0</h1>
+          </div>
         </div>
-        <div class="high-score-box">
-            This is the score box
+        <!-- Questions Container -->
+        <div class="questionsContainer hide">
+          <h2 class="questionText"></h2>
+          <div id="choiceContainer"></div>
         </div>
-        <button id="start-btn" class="btn" >Start</button>
+        <!-- High Score -->
+        <div class="high-score-box hide">This is the score box</div>
+        <!-- Buttons -->
+        <button id="start-btn" class="btn">Start</button>
         <button id="highscore-btn" class="btn">High Score</button>
-        
+      </div>
     </div>
     <script src="assets/script.js"></script>
-</body>
+  </body>
 </html>
-
-
-     
